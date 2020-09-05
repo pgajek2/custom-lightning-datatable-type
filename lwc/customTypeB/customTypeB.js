@@ -3,8 +3,6 @@ import { LightningElement, api } from 'lwc';
 export default class CustomTypeB extends LightningElement {
     
     @api recordId;
-    @api recordName;
-    @api createdDate;
 
     fireCustomTypeB() {
         const event = new CustomEvent('customtypeb', {
@@ -12,8 +10,7 @@ export default class CustomTypeB extends LightningElement {
             bubbles: true,
             cancelable: true,
             detail: {
-                recordId: this.recordId,
-                recordName: this.recordName
+                recordId: this.recordId
             },
         });
         this.dispatchEvent(event);

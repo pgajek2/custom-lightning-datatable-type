@@ -6,11 +6,11 @@ export default class CustomLightningDatatable extends LightningDatatable {
     static customTypes = {
         customTypeA: {
             template: customTypeA,
-            typeAttributes: ['recordId', 'recordName']
+            typeAttributes: ['recordId', 'customValueA']
         },
         customTypeB: {
             template: customTypeB,
-            typeAttributes: ['recordId', 'recordName']
+            typeAttributes: ['recordId']
         }
     }
 }
